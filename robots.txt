@@ -1,0 +1,18 @@
+e www.robotstxt.org/
+ http://code.google.com/web/controlcrawlindex/
+
+User-agent: *
+
+Disallow: /apps/
+Disallow: /img/
+Disallow: /js/
+Disallow: /css/
+Disallow: /class/
+Disallow: /cms/
+Disallow: /gestor/
+Disallow: /images/
+Disallow: /less/
+Disallow: /php/
+Disallow: /pdf/
+
+Sitemap: /sitemapsIndex.xml

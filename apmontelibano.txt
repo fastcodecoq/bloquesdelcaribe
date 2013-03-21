@@ -1,0 +1,29 @@
+
+
+   * solucionar y agregar:
+
+  ° en la parte de PQR (gestión de pqr parte técnica), 
+
+  - al cambiar el estado por atendida: cancelar la sugerencia de cuenta los detalles,
+  y mandar a la nueva ventana con la tabla de reparación de luminarias, la cual debe cargar
+  todas las veces que se ha intervenido esta (Debe adapatarse esta tabla para ser diligenciada en 
+  línea).
+
+  - agregar link con opción de busqueda de historiales de reparación de luminarias por serial.
+
+  - agregar icono maximixar a los detalles de cada reporte.
+ 
+
+  ° el la parte del mapa, 
+
+    - mostrar historial de luminaria al hacer click (intervenciones)
+    - solucionar problema al bajar y cargar una luminaria se borra el reporte
+
+    * mejoras: 
+
+
+      Parte financiera,
+
+       - reporte gerencial detallado de consumo de las luminarias potencia mes a mes.
+       - comparación de los consolidados teoricos y facturación electricaribe mes a mes.
+       - simular facturación a traves de inserción de tarifas personalizadas 

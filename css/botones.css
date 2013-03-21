@@ -1,0 +1,91 @@
+.boton-gomo{
+
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        font: bold 12px arial;
+        padding: 7px 7px;
+        border: 1px solid #A6A6A6;
+        background-image: #EEE;
+        background-image: -webkit-linear-gradient(top, #F2F2F2 0%,#D9D9D9 100%);
+        border-radius: 3px;
+        text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+        cursor: pointer;
+        border-image: initial;
+        box-shadow: 0 2px 2px #999;
+        margin-left: 5px;   
+
+}
+
+a:visited{
+       color: black;
+}
+
+.boton-gomo:active{
+    box-shadow: none !important;
+    color:#666;
+    background-image: -webkit-linear-gradient(top, #888 0%,#999 100%);
+    border:1px solid #444;
+
+}
+
+.boton-gomo:hover{    
+    color:#333;
+}
+
+.verde{
+    background: rgb(139,180,68);
+    color:#f5f5f5;
+    background: -webkit-linear-gradient(top,rgb(139,180,68) 60%,rgb(139,170,63) 20%);
+    background: -moz-linear-gradient(top,rgb(139,180,68) 60%,rgb(139,170,63) 20%);
+}
+
+.verde:hover{
+
+    background: #8ec447;
+     color:#fff;
+    background: -webkit-linear-gradient(top,#8ec447 40%, #89cf2c 20%);
+    background: -moz-linear-gradient(top,rgb(139,140,10) 40%,#89cf2c 20%);
+
+}
+
+.verde:active{
+    background: #8ec447;
+    background: -webkit-linear-gradient(top,#8ec447 100%, #89cf2c 1%);
+    background: -moz-linear-gradient(top,rgb(139,140,10) 100%,#89cf2c 1%);
+}
+
+
+.red {
+    border: 1px solid rgb(115,0,0);
+    background-color: rgb(200,0,1);
+    color: rgb(255,255,255) !important;
+    background-image: -khtml-gradient(linear,left top,left bottom,from( rgb(200,0,0) ),to rgb(167,0,0))  !important;
+    background-image: -moz-linear-gradient( rgb(200,0,0),rgb(167,0,0))  !important;
+    background-image: -ms-linear-gradient( rgb(200,0,0),rgb(167,0,0)) !important;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%, rgb(200,0,0)),color-stop(100%,rgb(167,0,0)))  !important;
+    background-image: -webkit-linear-gradient( rgb(200,0,0),rgb(167,0,0)) !important ;
+    background-image: -o-linear-gradient( rgb(200,0,0),rgb(167,0,0)) !important ;
+    background-image: linear-gradient( rgb(200,0,0),rgb(167,0,0))  !important;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f2f2f2) !important;
+}
+.red:hover , .red:focus{
+    background-color: rgb(242,0,0) #0b57b4;
+
+    background-image: -khtml-gradient(linear,left top,left bottom,from( rgb(242,0,0) ),to rgb(242,0,0))  !important;
+    background-image: -moz-linear-gradient( rgb(242,0,0),rgb(242,0,0))  !important;
+    background-image: -ms-linear-gradient( rgb(242,0,0),rgb(242,0,0)) !important;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%, rgb(242,0,0)),color-stop(100%,rgb(242,0,0)))  !important;
+    background-image: -webkit-linear-gradient( rgb(242,0,0),rgb(242,0,0)) !important ;
+    background-image: -o-linear-gradient( rgb(242,0,0),rgb(242,0,0)) !important ;
+    background-image: linear-gradient( rgb(242,0,0),rgb(242,0,0))  !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=' rgb(242,0,0)',endColorstr='rgb(242,0,0)',GradientType=0) !important ;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#f2f2f2) !important;
+
+}
+.red:active {
+    background: rgb(200,0,0);
+
+}

@@ -1,0 +1,14 @@
+Aca se agrega una linea con cada carga de archivos para saber de que se trata...
+
+
+======================================
+
+Para cada tipo de archivos cree una carpeta ej. images/... documentos/... audio/... 
+
+
+======================================
+
+
+* se agregó mision
+
+* cree carpetas de archivos audio/ imagenes/ documentos @gomosoft

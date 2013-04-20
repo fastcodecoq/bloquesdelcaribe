@@ -25,6 +25,19 @@ body{
 
 }
 
+     h1#logo{
+          
+          font-size: 2.2em;
+font-family: sans-serif;
+font-weight: bold;
+color: rgba(0, 0, 0, 0.6);
+text-shadow: 0 1px 1px #ccc;
+margin-top: 1.3em;
+padding: .2em .8em .2em .2em;
+background: rgba(235, 235, 235, 0.46);
+
+        }
+
 .cab_path{
 
     width: 991px;
@@ -204,10 +217,12 @@ f-b{
 
 
 header{
+
     width: 100%;
-    padding: 0;
-    height: 100px;
-    margin-bottom: 10px;
+padding: 0;
+display: block;
+overflow: auto;
+overflow: hidden;
 
 
 }
@@ -234,17 +249,14 @@ section#menu nav#cab_menu{
 section#menu nav#cab_menu ul{
 
     display: block;
-    width:452px;    
-    margin: 0 auto;
-    padding: 0 10px;
-    border-top:1px solid #cfcfcf;
+    width:452px;            
 
 }
 
 
 section#menu nav#cab_menu ul li a:hover{
 
-    color: rgb(139,180,68);
+    color: rgba(26, 149, 231, 0.74);
     text-shadow: -1px -1px 0 #dbdbdb;
 
 }
@@ -273,15 +285,16 @@ section#menu nav#cab_menu ul li{
 
 section.redes-sociales{
     position: relative;
-    float: right;
-    width: 100px;
-    height: 100%;
+float: right;
+height: 100%;
+margin-top: 1.5em;
 }
 
 section.redes-sociales figure{
 
-    position: absolute !important;
     right: 0;
+float: left;
+margin-right: .5em;
 
 }
 
@@ -323,10 +336,8 @@ section#cont_centro  div#slider{
 
       width: 100%;
       height: 321px;
-      border: 1px solid #acbd37;
-      -webkit-box-shadow: 0 0 8px #95a529;
-      -moz-box-shadow: 0 0 8px #95a529;
-      border-radius:3px;
+      border: 0;
+      
 
 }
 
@@ -421,6 +432,68 @@ footer#pie hgroup{
 }
 
 
+footer#pie hgroup h1{
+
+color : rgba(0, 0, 0, 0.47);
+
+}
+
+
+.pop{
+
+    position: fixed;
+background: white;
+padding: 20px;
+border: 1px dotted #888;
+width: 600px;
+margin-left: -340px;
+left: 50%;
+display : none;
+box-shadow : 0 0 10px rgba(0, 0, 0, 0.66);
+
+}
+
+.pop h1{
+
+    font-weight: bold;
+font-size: 1.3em;
+margin-bottom: 10px;
+
+}
+
+.pop p{
+
+      text-align: justify;
+      font-size: 1.1em;
+      line-height: 1.4;
+
+}
+
+
+.pop span.cerrar{
+
+    position: absolute;
+top: 5px;
+right: 10px;
+
+}
+
+
+.pop span.cerrar a{
+
+    color: rgba(255, 0, 0, 0.52);
+font-weight: bolder;
+
+}
+
+.pop span.cerrar a u{
+
+
+line-height: .5px !important;
+font-size: 0.9em;
+color: #999;
+
+}
 
 
 div.nav-porta{
@@ -508,4 +581,6 @@ section.cont-nav-porta{
 
 
  }
+
+
 

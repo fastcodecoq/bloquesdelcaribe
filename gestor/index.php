@@ -1,6 +1,7 @@
 <?php
   session_start();
 
+
   if(isset($_SESSION["edit"])){
        header("location:productos.php");
    }
@@ -14,7 +15,7 @@
 
     <meta charset="UTF-8" />
 
-    <title>Innova Espacios</title>
+    <title>Bloquera del caribe</title>
 
 
     <link rel="stylesheet" href="../css/html5_reset.css" type="text/css" />
@@ -196,11 +197,13 @@
 
 <header>
 
-    <figure class="center">
+    <figure class="center" style="width:100%">
 
         <a href="inicio" >
 
-            <span class="logo-cab"></span>
+            <h1 style="font-size: 3em;
+color: rgba(0, 0, 0, 0.69);
+">Bloques del Caribe</h1>
 
         </a>
 

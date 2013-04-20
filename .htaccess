@@ -474,7 +474,7 @@ AddCharset utf-8 .css .js .xml .json .rss .atom
   RewriteRule ^contenedores-maritimos class/bbcode.php?opt=1&cual=contenedores
   RewriteRule ^modulos-prefabricados-importados class/bbcode.php?opt=1&cual=modulos
 
-  RewriteRule ^productos class/bbcode.php  
+  RewriteRule ^productos productos.php  
 
 </IfModule>
 

@@ -37,7 +37,7 @@ $rs = $slide->carga(array("id_sl"=>1,"html"=>1));
 
     <meta name="keywords" content="Contenedores,Cartagena,Espacios,Diseño,Modulos,carga,baños,colombia,maritimos,bolivar,modulos importados,innova espacios,eventos,fabricación,diseño de espacios,comercio,comercializacion,obras,industria,industrias de eventos,petroleras,petrolera,construcion,mamonal"/>
 
-    <title>Innova Espacios | Alquiler y venta de baños portátiles, casetas y contenedores</title>
+    <title></title>
 
 
      <link rel="stylesheet" href="css/html5_reset.css" type="text/css" />
@@ -46,9 +46,9 @@ $rs = $slide->carga(array("id_sl"=>1,"html"=>1));
      <link rel="stylesheet" href="css/botones.css" type="text/css" />
      <link rel="stylesheet" href="css/dialogs.css" type="text/css" />
 
-     <link rel="shortcut icon" href="favicon.png" type="image/png" />
+     <link rel="shortcut icon" href=<?php echo "'".favicon."'"; ?> type="image/png" />
 
-       <link rel="canonical" href="http://www.innovaespacios.co/" />
+       <link rel="canonical" href="http://www.bloqueradelcaribe.com/" />
 
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/modernizr.js"></script>
@@ -116,6 +116,8 @@ $rs = $slide->carga(array("id_sl"=>1,"html"=>1));
 
         }
 
+   
+
     </style>
 
 
@@ -123,47 +125,14 @@ $rs = $slide->carga(array("id_sl"=>1,"html"=>1));
 
 <body>
 
-  <header>
-
-       <figure class="left">
-
-           <a href="inicio" >
-
-               <span class="logo-cab"></span>
-
-           </a>
-
-       </figure>
-
-      <section class="redes-sociales">
-
-          <figure style="right: 35px">
-                <a href="https://www.facebook.com/pages/Innova-Espacios/412693412078869" target="_blank">
-                    <span class="icono-fbk"></span>
-                </a>
-          </figure>
-
-          <figure style="right: -10px; top: 30px">
-              <a href="https://twitter.com/#!/InnovaEspacios" target="_blank">
-                  <span class="icono-twitter" ></span>
-              </a>
-          </figure>
-
-          <figure style="bottom: 0; right: 40px">
-              <a href="http://www.youtube.com/innovaespacios" target="_blank">
-                  <span class="icono-mail"></span>
-              </a>
-          </figure>
-
-      </section>
-
-  </header>
+  <?php echo file_get_contents( __DIR__ . "/partes/cabeza.php"); ?>
+  <?php echo file_get_contents( __DIR__ . "/partes/menu.php"); ?>
 
 
-  <section id= "cont_centro">
-
+  <section id= "cont_centro">    
 
     <div id = "slider">
+
 
         <?php
         if(isset($_SESSION["edit"]))
@@ -205,85 +174,11 @@ $rs = $slide->carga(array("id_sl"=>1,"html"=>1));
 
   </section>
 
-  <section id="menu">
-
-      <nav id="cab_menu" >
-
-           <ul >
-
-              <li>
-                  <a href="inicio" class="left">
-                      Inicio
-                  </a>
-              </li>
-
-              <li>
-                  <a href="nosotros"  class="left">
-                      Nosotros
-                  </a>
-              </li>
-
-              
-              <li>
-                  <a href="productos"  class="left">
-                      Productos
-                  </a>
-              </li>
-
-
-              <li>
-                  <a href="clientes"  class="left">
-                      Clientes
-                  </a>
-              </li>
 
 
 
-              <li>
-                  <a href="contacto"  class="left">
-                      Contacto
-                  </a>
-              </li>
-
-          </ul>
-
-
-      </nav>
-
-  </section>
-
-
-
-   <footer id="pie">
-
-       <div class="cont-cola">
-
-       <section class="dis-pro left">
-
-
-               <hgroup class="left">
-
-              <h1> Diseñado por Markakalinka & Programado por Gomosoft.</h1>
-
-               </hgroup>
-
-
-
-       </section>
-
-           <section class="copyrights right">
-
-               <hgroup class="left">
-
-                   <h1> INNOVA ESPACIOS &copy; 2012. Cartagena - Colombia.</h1>
-
-               </hgroup>
-
-           </section>
-
-       </div>
-
-   </footer>
+<?php echo file_get_contents( __DIR__ . "/partes/pie.php"); ?>
+ 
 
  </body>
 

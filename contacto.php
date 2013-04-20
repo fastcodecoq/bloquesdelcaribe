@@ -1,7 +1,7 @@
 <?php
-
 session_start();
 
+ include( $_SERVER["DOCUMENT_ROOT"] . "/config.php");
 
 if(isset($_SESSION["edit"]))
     echo "<script>cond=true</script>";
@@ -21,16 +21,16 @@ if(isset($_SESSION["edit"]))
 
     <meta charset="UTF-8" />
 
-    <title>Innova Espacios | Alquiler y venta de baños portátiles, casetas y contenedores</title>
+  <title> <?php echo title_page; ?> </title>
 
 
      <link rel="stylesheet" href="css/html5_reset.css" type="text/css" />
      <link rel="stylesheet" href="css/reset.css" type="text/css" />
      <link rel="stylesheet" href="css/__estilo_ini.css" type="text/css" />
      <link rel="stylesheet" href="css/contacto.css" type="text/css" />
-     <link rel="stylesheet" href="css/botones.css" type="text/css" />
+     <link rel="stylesheet" href="css/botones.css" type="text/css" />     
 
-     <link rel="shortcut icon" href="favicon.png" type="image/png" />
+     <link rel="shortcut icon" href=<?php echo "'".favicon."'"; ?> type="image/png" />
 
       <script type="text/javascript" src="js/jquery.js"></script>
       <script type="text/javascript" src="js/modernizr.js"></script>
@@ -49,9 +49,9 @@ if(isset($_SESSION["edit"]))
 
                    $.slide_mediaf();
 
-                   $("#msg").msg();
+                   $("#msg").msg();   
 
-                   $("#mapa").ini_mapa({lat:10.354514276965059,lng:-75.49167827584915,zoom : 16 , mark : {image : "img/mark_innova.png" , size : new google.maps.Size(140,120) , point_or: new google.maps.Point(2,0)  } });
+                   $("#mapa").ini_mapa({lat:9.286499084853057,lng:-75.41119584349974,zoom : 16 , mark : {image : "img/marker_map.png" , size : new google.maps.Size(140,120) , point_or: new google.maps.Point(2,0)  } });
 
                    if(cond)
                      clos_se();
@@ -67,42 +67,8 @@ if(isset($_SESSION["edit"]))
 </head>
 
 <body>
-
-<header>
-
-    <figure >
-
-        <a href="inicio" >
-
-            <span class="logo-cab"></span>
-
-        </a>
-
-    </figure>
-
-    <section class="redes-sociales" >
-
-          <figure style="right: 35px">
-                <a href="https://www.facebook.com/pages/Innova-Espacios/412693412078869" target="_blank">
-                    <span class="icono-fbk"></span>
-                </a>
-          </figure>
-
-          <figure style="right: -10px; top: 30px">
-              <a href="https://twitter.com/#!/InnovaEspacios" target="_blank">
-                  <span class="icono-twitter" ></span>
-              </a>
-          </figure>
-
-          <figure style="bottom: 0; right: 40px">
-              <a href="http://www.youtube.com/innovaespacios" target="_blank">
-                  <span class="icono-mail"></span>
-              </a>
-          </figure>
-
-      </section>
-
-</header>
+<?php echo file_get_contents( $_SERVER["DOCUMENT_ROOT"] . "/partes/cabeza.php"); ?>
+<?php echo file_get_contents( __DIR__ . "/partes/menu.php"); ?>
 
   <section id= "cont_centro">
 
@@ -118,18 +84,16 @@ if(isset($_SESSION["edit"]))
                    <h1>Para mayor información y cotizaciones favor escribir a:</h1>
                </hgroup>
 
-                   info@innovaespacios.co
+                   info@bloquesdelcaribe.com
               </li>
 
 
 
                  <li>  <hgroup>
-                     <h1>  Campamento y Exhibición.</h1>
+                     <h1>  Dirección.</h1>
                  </hgroup>
-
-                     Calle 3 No.7-22.<br/>
-                     Mamonal,Sector Arroz Barato.<br />
-                     Cartagena, D.T. y C.
+DIRECCION CRA 4 NO 27E-05 <br /> VARIANTE A TOLU <br />
+ DIAG. AL ESTADERO LA GRANJA 
 
                  </li>
 
@@ -139,20 +103,21 @@ if(isset($_SESSION["edit"]))
                      <h1>Móvil.</h1>
                  </hgroup>
 
-                     57 + 316-875-29-79
+                     +57 (310) 643-5810- +57 (313) 575-1773
 
                      <br />
                  </li>
 
                  <li>  <hgroup>
                      <h1>Teléfono.</h1>
-                 </hgroup>
 
-                     5+ 690-38-10
+                 </hgroup>
+ +57 (5) 280-8239
+                     
 
                      <br />
 
-                     <button class="boton-gomo verde" id="msg" style="margin-top: 20px;">Enviar un mensaje.</button>
+                     <button class="btn btn-primary" id="msg" style="margin-top: 20px;">Enviar un mensaje.</button>
 
                     <div class="msg">
                                                                        
@@ -207,84 +172,7 @@ if(isset($_SESSION["edit"]))
 
   </section>
 
-  <section id="menu">
-
-      <nav id="cab_menu" >
-
-         <ul >
-
-              <li>
-                  <a href="inicio" class="left">
-                      Inicio
-                  </a>
-              </li>
-
-              <li>
-                  <a href="nosotros"  class="left">
-                      Nosotros
-                  </a>
-              </li>
-
-
-                      <li>
-                         <a href="productos"  class="left">
-                           Productos
-                         </a>
-                      </li>
-
-
-              <li>
-                  <a href="clientes"  class="left">
-                      Clientes
-                  </a>
-              </li>
-
-            
-
-              <li>
-                  <a href="contacto"  class="left">
-                      Contacto
-                  </a>
-              </li>
-
-          </ul>
-
-      </nav>
-
-  </section>
-
-
-
-   <footer id="pie">
-
-       <div class="cont-cola">
-
-       <section class="dis-pro left">
-
-
-               <hgroup class="left">
-
-              <h1> Diseñado por Markakalinka & Programado por Gomosoft.</h1>
-
-               </hgroup>
-
-
-
-       </section>
-
-           <section class="copyrights right">
-
-               <hgroup class="left">
-
-                   <h1> INNOVA ESPACIOS &copy; 2012. Cartagena - Colombia.</h1>
-
-               </hgroup>
-
-           </section>
-
-       </div>
-
-   </footer>
+<?php echo file_get_contents( __DIR__ . "/partes/pie.php"); ?>
 
  </body>
 

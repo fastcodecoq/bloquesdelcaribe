@@ -237,8 +237,9 @@ class app_sql
     var $_mysqli;
 
     public function __construct ($tabla){
+         
 
-        $mysqli = new mysqli(db_server, db_user, db_pass,db_bd);
+        $mysqli = new mysqli("localhost", "bloquesd_gomo", '$up3r_p455w0rd',"bloquesd_bd");
 
         if ( mysqli_connect_errno ()) {
 

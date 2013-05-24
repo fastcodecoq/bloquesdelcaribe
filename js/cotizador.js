@@ -21,6 +21,80 @@
 
          });
 
+
+         $("a[href='#abrir']").click(function(){
+
+              $($(this).attr("rel")).fadeIn();
+              $(".over").fadeIn();
+
+         });
+
+         $("a[href='#delPro']").click(function(){
+
+            alert("hola")
+
+            //  delEl($(this));
+
+         });
+
+          $("a[href='#add_pedido']").click(function(){
+
+              var producto = {
+
+                 producto : $("select[name='producto_']").val(),
+                 cantidad : $("input[name='cantidad_']").val()
+
+              }
+
+              addEl(producto);
+
+         });
+
+
+          $("a[href='#do_pedido']").click(function(){
+
+             do_pedido();
+
+         });
+
+        
+
+       }
+
+
+       function do_pedido(){
+
+
+            var info = {
+
+                nombre : $("input[name='nombre']").val(),
+                telefono : $("input[name='telefono']").val(),
+                direccion : $("input[name='direccion']").val(),
+                correo : $("input[name='correo']").val(),
+                productos : $("ul#ul_prods").html(),
+                sugerencia : $("textarea[name='sugerencia']").val()
+
+            };
+
+            $.getJSON("php/pedido.php", info , function( rs ){
+
+                if(rs.success == 1)
+                {
+
+                   $("#pedido").fadeOut(function(){
+
+                      alert("Hemos recibido su pedido, dentro de poco nos pondremos en contacto con usted.");
+                      cleanPedido();
+
+
+                   });
+
+                }
+                else
+                  alert("No se pudo recibir su pédido, intentelo de nuevo");
+
+            });
+
        }
 
 
@@ -196,6 +270,84 @@
 
       //esta funcion es donde llamamos todos los metodos que hacen parte del 
       // app cotizador (es quien la inicia)
+
+
+      function addEl( el ){
+          
+          if(el.producto == 0)
+            {
+
+              alert("Debes seleccionar un producto a agregar");
+              return false;
+
+            }
+
+            if(el.cantidad == 0)
+            {
+
+              alert("Debes indicar una cantidad");
+              return false;
+
+            }
+
+          var texto = "<li>" + el.producto + " x " + el.cantidad + " <a href='#delPro' style='color:red' title='Eliminar este producto' onclick='delEl($(this))'>x</a></li>";
+
+          $("#ul_prods").prepend(texto);
+
+          actCant("+");
+
+
+      }
+
+
+      function cleanPedido(){
+
+          var inputs = $("#pedido form input");
+
+          for(i= 0 ; i < inputs.length ; i++)
+            $(inputs[i]).val("");
+
+          $("#pedido textarea").val("Escriba su sugerencia...");
+          $("#pedido textarea").text("Escriba su sugerencia...");
+          $("#ul_prods").html('<li class="counter">total: <b>0</b></li>');
+
+
+      }
+
+
+      function delEl( el ){
+
+
+          el.parent().remove();
+
+          actCant("-");          
+
+      }
+
+
+      function actCant( cmd ){
+
+          var el = $("#ul_prods li.counter b");
+          var cant = parseInt(el.text());
+
+
+           switch( cmd ){
+
+              case "+":                    
+
+                     el.text( cant+1 );
+
+              break;
+
+              case "-":
+
+                    el.text( cant-1 );
+
+              break;
+
+           }
+
+      }
 
       function ini(){
 

@@ -4,6 +4,10 @@ session_start();
 
 
 
+
+
+
+
 class ingr_sis
 {
 
@@ -13,7 +17,7 @@ class ingr_sis
     {
 
         if(!function_exists("test_config_inc"))
-            include("../cms/config.inc.php");
+            include("config.inc.php");
 
          if(!function_exists("app_sql"))
              include("sql.php");
@@ -42,7 +46,7 @@ class ingr_sis
 
 
         $user = $_REQUEST["usuario"];
-        $pwd = md5($_REQUEST["pwd"]);
+        $pwd = $_REQUEST["pwd"];
 
 
 
@@ -60,7 +64,8 @@ class ingr_sis
             )
         ));
 
-        if($rs){
+
+        if($rs->num_rows > 0){
 
 
             setcookie("ses", 1, time()+3600);
@@ -69,7 +74,7 @@ class ingr_sis
             $_SESSION["user"] = $user;
 
 
-            header("location:../gestor/productos.php"); 
+            header("location:../"); 
 
 
         }else{
@@ -271,6 +276,8 @@ class ingr_sis
 
 
       $app = new ingr_sis();
+
+
 
     switch($_REQUEST["action"]){
 

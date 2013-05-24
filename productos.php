@@ -41,14 +41,12 @@ if(isset($_SESSION["edit"]))
       <script type="text/javascript" src="js/msg.js"></script>
       <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
       <script type="text/javascript" src="js/mapa.js"></script>
-      <script type="text/javascript" src="js/less.js"></script>
-      <script type="text/javascript" src="js/cotizador.js"></script>
+      <script type="text/javascript" src="js/less.js"></script>      
 
     <script type="text/javascript">
 
                 html5_ie();
     
-
 
     </script>
 
@@ -380,7 +378,7 @@ obra.
           <h1>Cotización</h1>
           <span>De acuerdo a los productos seleccionados el valor es:</span> <br />
           <span class='valor'></span> <br />
-          <span>El total de esta cotización es negociable. <a href="#">Hacer pedido</a></span><br />
+          <span>El total de esta cotización es negociable. <a href="#abrir" rel="#pedido">Hacer pedido</a></span><br />
           <a href="#cerrar" class="cerrar" rel=".popUp">X</a>
      </div>
 

@@ -15,7 +15,7 @@
 
     <meta charset="UTF-8" />
 
-    <title>Bloquera del caribe</title>
+    <title>Bloques del caribe</title>
 
 
     <link rel="stylesheet" href="../css/html5_reset.css" type="text/css" />
@@ -274,28 +274,7 @@ color: rgba(0, 0, 0, 0.69);
 
     <div class="cont-cola">
 
-        <section class="dis-pro left">
-
-
-            <hgroup class="left">
-
-                <h1> Diseñado por Markakalinka & Programado por Gomosoft.</h1>
-
-            </hgroup>
-
-
-
-        </section>
-
-        <section class="copyrights right">
-
-            <hgroup class="left">
-
-                <h1> INNOVA ESPACIOS &copy; 2012. Cartagena - Colombia.</h1>
-
-            </hgroup>
-
-        </section>
+       
 
     </div>
 

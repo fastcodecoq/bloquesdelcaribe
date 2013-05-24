@@ -39,7 +39,7 @@ figure.img-nosotros{
 }
 
 .parrafo-contacto .p-columna{
-    border-right: 1px solid #cfcfcf;
+    
 }
 
 .parrafo-contacto p{
@@ -80,6 +80,7 @@ ul.cola li{
 
    float: left;
    margin-left: 5px;
+   font-size: 1em;
 
 }
 

@@ -83,7 +83,7 @@
 
     <meta charset="UTF-8" />
 
-    <title>Innova Espacios</title>
+    <title>Bloques del caribe</title>
 
 
     <link rel="stylesheet" href="../css/html5_reset.css" type="text/css" />
@@ -283,15 +283,6 @@
 
 <header>
 
-    <figure class="center">
-
-        <a href="inicio" >
-
-            <span class="logo-cab"></span>
-
-        </a>
-
-    </figure>
 
 
 
@@ -405,8 +396,7 @@
 
 
             <hgroup class="left">
-
-                <h1> Diseñado por Markakalinka & Programado por Gomosoft.</h1>
+   
 
             </hgroup>
 
@@ -417,8 +407,6 @@
         <section class="copyrights right">
 
             <hgroup class="left">
-
-                <h1> INNOVA ESPACIOS &copy; 2012. Cartagena - Colombia.</h1>
 
             </hgroup>
 

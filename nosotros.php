@@ -91,7 +91,7 @@ if(isset($_SESSION["edit"]))
 
       <figure class="img-nosotros left"  >
 
-          <img src="http://placehold.it/328x246" alt="innova" />
+          <img src="img/md.jpg" alt="innova" />
 
       </figure>
 
@@ -105,17 +105,17 @@ if(isset($_SESSION["edit"]))
            </hgroup>
 
              <p data-role='col1'>
-                 Contamos con más de 15 años de experiencia en fabricación y comercialización de las mejores soluciones  para:
+                 Contamos con más de 10 años de experiencia en fabricación y comercialización de las mejores soluciones  para:
 
                  <br /><br />
-                 <span class="num-color">1.</span> Industrias de eventos y de grandes obras.<br /><br />
+                 <span class="num-color">1.</span> Industria Arquitectónica.<br /><br />
 
                    <span class="num-color"> 2. </span>Infraestructuras.<br /><br />
 
                    
                    <span class="num-color"> 3.</span> Construcción.<br /><br />
 
-                 Conocemos las necesidades y tendencias del mercado y a cada cliente ofrecemos atención personalizada con propuestas caracterizadas, excelente relación innovación costo-precio-garantía y funcionalidad.
+                 Conocemos las necesidades y tendencias del mercado y a cada cliente ofrecemos atención personalizada nuestros materiales son de la mejor calidad para ofrecer un producto de excelente resistencia que garantice la durabilidad de las obras en el cual se usa.
              </p>
 
           </div>
@@ -126,7 +126,7 @@ if(isset($_SESSION["edit"]))
 color: rgba(0, 0, 0, 0.85);
 font-weight: bold;">Ver más...</a>
               <br />
-              <img src="http://placehold.it/257x225" alt="" style="margin-top:5px" width="257"/>
+              <img src="img/mi.jpg" alt="" style="margin-top:5px" width="257"/>
 
           </p>
           

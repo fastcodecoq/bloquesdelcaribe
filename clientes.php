@@ -49,8 +49,7 @@ if(isset($_SESSION["edit"]))
 
                    $.slide_mediaf();
 
-                   if(cond)
-                     clos_se();
+
 
                });
 
@@ -85,7 +84,18 @@ if(isset($_SESSION["edit"]))
 
               <ul class="clientes" data-role='editable'>
 
-              <li style="list-style-image:none"> <img src="http://placehold.it/200X324" alt=""> </li>
+                <br />
+
+              <li> ING CONSTRUCCIONES</li>
+             <li>PISOS Y ENCHAPE DE LA COSTA</li>
+             <li>FERRO MOJANA</li>
+             <li>FERRETERIA EL COMIENZO</li>
+             <li>MATERIALES Y PINTURAS LA 32</li>
+             <li>FERROMATERIALES DEL CARIBE</li>
+             <li>FERRO SANPEDRO</li>
+             <li>DISTRIBUCIONES FRANFRE</li>
+             <li>MATERIALES Y PINTURAS ARDIMAR</li>
+             <li>MATERIALES LA FE</li>
 
                  
               </ul>
@@ -96,28 +106,18 @@ if(isset($_SESSION["edit"]))
 
 
 
-              <li style="border-right: 1px solid #cfcfcf">
+              <li style="width:64%; ">
 
              <ul class="clientes" data-role='editable' >
 
-              <li style="list-style-image:none"> <img src="http://placehold.it/200X350" alt=""> </li>
+              <li style="list-style-image:none"> <img src="img/nc.jpg" alt=""> </li>
         
-         </ul>
-
+            </ul>
+  
 
 
               </li>
 
-              <li>
-
-          <ul class="clientes" data-role='editable' >
-
-              <li style="list-style-image:none"> <img src="http://placehold.it/200X350" alt=""> </li>
-
-       
-          </ul>
-
-              </li>
 
             </ul>
 

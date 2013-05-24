@@ -53,8 +53,6 @@ if(isset($_SESSION["edit"]))
 
                    $("#mapa").ini_mapa({lat:9.286499084853057,lng:-75.41119584349974,zoom : 16 , mark : {image : "img/marker_map.png" , size : new google.maps.Size(140,120) , point_or: new google.maps.Point(2,0)  } });
 
-                   if(cond)
-                     clos_se();
 
 
                });
